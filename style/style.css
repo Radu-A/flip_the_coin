@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  color: rgb(235, 243, 251);
+}
+
+body {
+  height: 100vh;
+  background-color: #484964;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  margin: 4rem 0.5rem 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 450px;
+}
+
+h1 {
+	font-size: 4rem;
+  font-weight: 900;
+  text-shadow:
+    -4px -4px 0 #272837,
+     4px -4px 0 #272837,
+    -4px  4px 0 #272837,
+     4px  4px 0 #272837,
+     4px  4px 0 #272837;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.coin {
+  width: 11rem;
+  /* transform: rotateY(240deg); */
+}
+
+#rotated {
+  transform: rotateY(240deg);
+}
+
+.shadow {
+  width: 7rem;
+}
+
+#random {
+  width: 11rem;
+  margin-top: 2rem;
+  height: 3.5rem;
+  background-color: #2d71e6;
+  font-size: 1.2rem;
+  font-weight: 800;
+  border-radius: 0.5rem;
+  border-right: none;
+  border-bottom: 4px solid #2562cd;     /* elimina borde */
+}
+
+.author-info {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+  color: rgb(55, 65, 81);
+}
+
+.author-info a {
+  text-decoration: none;
+}
