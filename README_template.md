@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="{https://your-url-to-the-solution}">
+    <a href="https://github.com/Radu-A/flip_the_coin">
       Solution
     </a>
     <span> | </span>
