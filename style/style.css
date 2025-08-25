@@ -109,7 +109,7 @@ p {
   text-decoration: none;
 }
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
   main {
     height: 300px;
   }
@@ -145,4 +145,4 @@ p {
     font-weight: 800;
     border-bottom: 4px solid #2562cd; /* elimina borde */
   }
-}
+} */
