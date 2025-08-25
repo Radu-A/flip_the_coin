@@ -17,15 +17,6 @@
 
   </head>
   <body>
-    <!-- 
-
-    Flip a Coin Game
-    Press the coin or the button to flip the coin
-    Head
-    Tail
-    Random
-  
-    -->
 
     <header>
 
@@ -37,13 +28,18 @@
 
     <main id="main">
 
-      <img class="coin" src="resources/heads.svg" alt="coin heads">
-
-      <!-- <img src="resources/tails.svg" alt="coin tails"> -->
+      <div class="coin" id="coin">
+        <div class="front">
+          <img class="coin-img" src="resources/heads.svg" alt="coin heads">
+        </div>
+        <div class="back">
+          <img class="coin-img" src="resources/tails.svg" alt="coin tails">
+        </div>
+      </div>
 
       <img class="shadow" src="resources/shadow.svg" alt="">
 
-      <p>Heads</p>
+      <p id="result"></p>
 
       <button id="random">RANDOM</button>
 

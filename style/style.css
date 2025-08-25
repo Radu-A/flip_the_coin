@@ -11,9 +11,9 @@
 body {
   height: 100vh;
   background-color: #484964;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 
 header {
@@ -33,7 +33,7 @@ main {
 }
 
 h1 {
-	font-size: 4rem;
+	font-size: 3.5rem;
   font-weight: 900;
   text-shadow:
     -4px -4px 0 #272837,
@@ -50,16 +50,37 @@ p {
 }
 
 .coin {
-  width: 11rem;
-  /* transform: rotateY(240deg); */
+  width: 10rem;
+  margin-top: 2.5rem;
+  transition: all 0.8s;
+  transform-style: preserve-3d;
 }
 
-#rotated {
-  transform: rotateY(240deg);
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  backface-visibility: hidden;
+  width: 100%;
+  position: absolute;
+}
+
+.back {
+  transform: rotateY(180deg);
 }
 
 .shadow {
   width: 7rem;
+  margin-top: 11rem;
+}
+
+#coin-img {
+  width: 100%;
+}
+
+#result {
+  margin-top: 2rem;
 }
 
 #random {
@@ -71,16 +92,57 @@ p {
   font-weight: 800;
   border-radius: 0.5rem;
   border-right: none;
-  border-bottom: 4px solid #2562cd;     /* elimina borde */
+  border-bottom: 4px solid #2562cd; /* elimina borde */
 }
 
 .author-info {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   font-size: 14px;
   text-align: center;
-  margin-top: 16px;
+  /* margin-top: 16px; */
   color: rgb(55, 65, 81);
 }
 
 .author-info a {
   text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  main {
+    height: 300px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .coin {
+    width: 7rem;
+  }
+  .back, .front {
+    width: 7rem;
+  }
+  .coin-img {
+    width: 7rem;
+  }
+  .shadow {
+    width: 5rem;
+    margin-top: 6.5rem;
+  }
+  #result {
+    margin-top: 0rem;
+  }
+  #random {
+    width: 6.5rem;
+    height: 2rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    border-right: none;
+    font-size: 0.8rem;
+    font-weight: 800;
+    border-bottom: 4px solid #2562cd; /* elimina borde */
+  }
 }
